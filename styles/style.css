@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+/*?? section 1  */
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.heading {
+  margin: 1rem 0;
+  font-weight: 800;
+}
+
+.inp-data {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+input {
+  background: transparent;
+  background-color: #ded4d4;
+  width: 150px;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: none;
+}
+input:focus-visible {
+  color: #fff;
+  background-color: #333;
+}
+
+.calc-tab {
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+  height: 482px;
+}
+
+.grad-table {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+.grade {
+  max-width: 650px;
+  min-width: 250px;
+}
+.table-responsive {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  --rem: 16;
+  font-size: 13px;
+  line-height: 1.42857143;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 18px;
+  table-layout: fixed;
+}
+
+.table-responsive th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  width: 150px;
+}
+.c-tab {
+  border-collapse: collapse;
+}
+tr > th {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+/* ! SECTION 2 CGPA  */
+.Cgpa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0rem;
+  align-items: center;
+  width: 100%;
+}
+.cgpaResult {
+  font-size: 18px;
+  margin: 1rem 0;
+}
+.title{
+  margin: 1rem 0;
+}
+
+/*~~  Button  ~~*/
+.btn {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 1rem 5rem;
+  transition: all 0.5s ease-in-out;
+  background: #777373;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.btn-d {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/*^^ other classes  */
+.print {
+  color: blue;
+  font-size: 18px;
+  font-weight: 600;
+}
+.error {
+  margin: 1rem 0;
+  font-size: 18px;
+  color: red;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 500px) {
+  input{
+    width: 130px;
+    height: 2rem;
+  }
+  .table-responsive th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+.calc-tab > tbody > tr{
+  height: 2rem;
+
+}
+tr > th {
+  padding: 5px;
+}
+}

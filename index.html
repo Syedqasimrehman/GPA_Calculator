@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>GPACalc</title>
+
+</head>
+
+<body>
+
+    <section>
+        <div class="calc">
+            <h2 class="heading">GPA and CGPA Calculator</h2>
+            <h2>Calculate GPA</h2>
+            <div class="inp-data">
+                <form>
+                    <table class="calc-tab">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Grade</th>
+                                <th>Creditis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Subject-1</td>
+                                <td><input placeholder="Enter Grade Points" class="subjects" id="Subject-1"
+                                        type="number" max="100" min="0" required></td>
+                                <td><input class="craditHours" placeholder="Enter Crediti hrs" type="number" min="0"
+                                        max="5" required></td>
+                            </tr>
+                            <tr>
+                                <td>Subject-2</td>
+                                <td><input placeholder="Enter Grade Points" class="subjects" id="Subject-1"
+                                        type="number" max="100" min="0" required></td>
+                                <td><input class="craditHours" placeholder="Enter Crediti hrs" type="number" min="0"
+                                        max="5" required></td>
+                            </tr>
+                            <tr>
+                                <td>Subject-3</td>
+                                <td><input placeholder="Enter Grade Points" class="subjects" id="Subject-3"
+                                        type="number" max="100" min="0" required></td>
+                                <td><input class="craditHours" placeholder="Enter Crediti hrs" type="number" min="0"
+                                        max="5" required></td>
+                            </tr>
+                            <tr>
+                                <td>Subject-4</td>
+                                <td><input placeholder="Enter Grade Points" class="subjects" id="Subject-4"
+                                        type="number" max="100" min="0" required></td>
+                                <td><input class="craditHours" placeholder="Enter Crediti hrs" type="number" min="0"
+                                        max="5" required></td>
+                            </tr>
+                            <tr>
+                                <td>Subject-5</td>
+                                <td><input placeholder="Enter Grade Points" class="subjects" id="Subject-5"
+                                        type="number" max="100" min="0" required></td>
+                                <td><input class="craditHours" placeholder="Enter Crediti hrs" type="number" min="0"
+                                        max="5" required></td>
+                            </tr>
+                            <tr>
+                                <td>Subject-6</td>
+                                <td><input placeholder="Enter Grade Points" class="subjects" id="Subject-6"
+                                        type="number" max="100" min="0" required></td>
+                                <td><input class="craditHours" placeholder="Enter Crediti hrs" type="number" min="0"
+                                        max="5" required></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="table-right">
+                    <div class="grad-table">
+                        <div class="grade">
+                            <table class="table table-striped table-responsive" style="table-layout: fixed;">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: center;">Letter Grade</th>
+                                        <th style="text-align: center;">Grade Points</th>
+                                        <th style="text-align: center;">Numerical Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center;">A+</td>
+                                        <td style="text-align: center;">85 & above</td>
+                                        <td style="text-align: center;">4.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">A-</td>
+                                        <td style="text-align: center;">80-84</td>
+                                        <td style="text-align: center;">3.70</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">B+</td>
+                                        <td style="text-align: center;">75-79</td>
+                                        <td style="text-align: center;">3.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">B</td>
+                                        <td style="text-align: center;">70-74</td>
+                                        <td style="text-align: center;">3.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">B-</td>
+                                        <td style="text-align: center;">65-69</td>
+                                        <td style="text-align: center;">2.70</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">C+</td>
+                                        <td style="text-align: center;">61-69</td>
+                                        <td style="text-align: center;">2.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">C</td>
+                                        <td style="text-align: center;">58–60</td>
+                                        <td style="text-align: center;">2.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">C-</td>
+                                        <td style="text-align: center;">55-57</td>
+                                        <td style="text-align: center;">1.70</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">D</td>
+                                        <td style="text-align: center;">50-54</td>
+                                        <td style="text-align: center;">1.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;">F</td>
+                                        <td style="text-align: center;">Below 50</td>
+                                        <td style="text-align: center;">0.00</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result"></div>
+            <div class="btn-d">
+                <button class="btn">Calculate</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="Cgpa">
+            <h2 class="title">Calculate CGPA</h2>
+            <div class="cgpa-ta">
+                <form>
+                    <table class="c-tab">
+                        <thead>
+                            <tr>
+                                <th>Semesters</th>
+                                <th>GPA</th>
+                                <th>Total Creditis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Semester 1st </td>
+                                <td>
+                                    <input id="gpa1" placeholder="Enter GPA" type="number" max="4" min="0" required>
+                                </td>
+                                <td>
+                                    <input id="cradithrs1" placeholder="Enter Total Crediti" type="number" max="20"
+                                        min="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Semester 2nd</td>
+                                <td>
+                                    <input id="gpa2" placeholder="Enter GPA" type="number" max="4" min="0" required>
+                                </td>
+                                <td>
+                                    <input id="cradithrs2" placeholder="Enter Total Crediti" type="number" max="20"
+                                        min="0" required>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="cgpaResult"></div>
+            <div class="btn-d">
+                <button class="btn">Calculate</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/send.js"></script>
+
+</body>
+
+</html>
